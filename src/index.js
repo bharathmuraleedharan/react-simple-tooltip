@@ -47,6 +47,8 @@ class Wrapper extends React.Component {
       placement,
       radius,
       zIndex,
+      width,
+      height,
       ...props
     } = this.props
     return (
@@ -70,6 +72,8 @@ class Wrapper extends React.Component {
             fontFamily={fontFamily}
             fontSize={fontSize}
             padding={padding}
+            width={width}
+            height={height}
           >
             <Arrow
               width={arrow}
@@ -100,6 +104,8 @@ Wrapper.propTypes = {
   placement: PropTypes.oneOf(["left", "top", "right", "bottom"]),
   radius: PropTypes.number,
   zIndex: PropTypes.number,
+  width: PropTypes.string,
+  height: PropTypes.string,
 }
 
 Wrapper.defaultProps = {
